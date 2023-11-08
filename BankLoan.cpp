@@ -1,3 +1,5 @@
+// Question 1
+
 #include <iostream>
 
 using namespace std;
@@ -8,9 +10,11 @@ int main()
     int userAge, bankBalance, bankAge;
     string crb, userName;
 
+    // prompt user for their name
     cout << "Please enter your name: " << endl;
-    cin >> userName;
+    getline(cin, userName);
 
+    // prompt user for thier age
     cout << "Please enter your age: " << endl;
     cin >> userAge;
 
@@ -62,4 +66,6 @@ int main()
         // inform user their age is invalid.
         cout << "Age not valid " << endl;
     }
+
+    return 0;
 }
